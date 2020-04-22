@@ -16,10 +16,15 @@ html {
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
   }
+
+  .container-bg {
+      width: 100vw;
+      height: 100vh;
+      background: url(../../dist/images/bg-intro-desktop.png), $primary-color;
+  }
   
   .container {
     max-width: 98rem;
-    height: 100vh;
     margin: 0 auto;
   }
   
