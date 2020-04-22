@@ -77,15 +77,37 @@ html {
       padding: 4rem;
       background-color: $white-color;
       border-radius: 1rem;
+      box-shadow: 0 1rem 1rem 0 darken($dark-blue, 10);
+
+      input {
+        display: block;
+        width: 100%;
+        margin-bottom: 2rem;
+        padding: 1.6rem 2.8rem;
+        border-radius: 1rem;
+        border: 0.1rem solid $dark-blue;
+        outline: none;
+
+        &:focus {
+          border-width: 0.2rem;
+        }
+      }
 
       .button-primary {
         width: 100%;
         padding: 2rem;
         background-color: $button-color;
+        color: $white-color;
+        text-transform: uppercase;
+        font-weight: 700;
         border-radius: 1rem;
         border: none;
         outline: none;
         cursor: pointer;
+
+        &:hover {
+          background-color: darken($button-color, 10);
+        }
       }
   }
 
@@ -98,9 +120,23 @@ html {
     font-weight: 700;
   }
 
+  h6 {
+    font-size: 1rem;
+    color: $dark-blue;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
   .bold-text {
       font-weight: 700;
-      color: $white-color;
+  }
+
+  .white-text {
+    color: $white-color;
+  }
+
+  .primary-text {
+    color: $primary-color;
   }
 
   @import "media";
