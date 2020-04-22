@@ -38,15 +38,19 @@
   
             <div class="form-container">
   
-              <form>
+              <form id="form">
   
-                <input type="text" placeholder="First Name" />
+                <div class="form-control"><input id="firstName" name="First Name" type="text" placeholder="First Name" />
+                <small></small></div>
   
-                <input type="text" placeholder="Last Name" />
+                <div class="form-control"><input id="lastName" name="Last Name" type="text" placeholder="Last Name" />
+                <small></small></div>
   
-                <input type="email" placeholder="Email Address" />
+                <div class="form-control"><input id="email" name="Email" type="email" placeholder="Email Address" />
+                <small></small></div>
   
-                <input type="password" placeholder="Password" />
+                <div class="form-control"><input id="password" name="Password" type="password" placeholder="Password" />
+                <small></small></div>
   
                 <button class="button-primary">Claim your free trial</button>
   
@@ -66,5 +70,6 @@
 
   </div>
 
+  <script src="js/main.min.js"></script>
   </body>
 </html>

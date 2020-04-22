@@ -83,7 +83,6 @@ html {
       input {
         display: block;
         width: 100%;
-        margin-bottom: 2rem;
         padding: 1.6rem 2.8rem;
         border-radius: 1rem;
         border: 0.1rem solid $dark-blue;
@@ -134,6 +133,13 @@ html {
 
   .primary-text {
     color: $primary-color;
+  }
+
+  small {
+    display: block;
+    margin-bottom: 2rem;
+    color: $primary-color;
+    font-weight: 600;
   }
 
   @import "media";

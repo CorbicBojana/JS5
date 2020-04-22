@@ -101,7 +101,6 @@ body {
   .form-container input {
     display: block;
     width: 100%;
-    margin-bottom: 2rem;
     padding: 1.6rem 2.8rem;
     border-radius: 1rem;
     border: 0.1rem solid #3e3c49;
@@ -140,6 +139,12 @@ h6 {
 
 .primary-text {
   color: #ff7a7a; }
+
+small {
+  display: block;
+  margin-bottom: 2rem;
+  color: #ff7a7a;
+  font-weight: 600; }
 
 @media only screen and (max-width: 780px) {
   .container-bg {
