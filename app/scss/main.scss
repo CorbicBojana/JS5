@@ -6,6 +6,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   
   * {
@@ -58,7 +59,7 @@ html {
         width: 100%;
         padding: 2rem;
         background-color: $blue-color;
-        color: $grayish-blue;
+        color: $white-color;
         border-radius: 1rem;
         border: none;
         outline: none;
@@ -129,10 +130,6 @@ html {
 
   .bold-text {
       font-weight: 700;
-  }
-
-  .white-text {
-    color: $white-color;
   }
 
   .primary-text {

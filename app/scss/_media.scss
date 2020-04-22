@@ -1,6 +1,15 @@
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 780px) {
+
+    .container-bg {
+        height: 100%;
+        background: url(../../dist/images/bg-intro-mobile.png), $primary-color;
+    }
 
     .col-1 {
         width: 100%;
+    }
+
+    .center-text {
+        text-align: center;
     }
 }

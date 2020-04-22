@@ -38,7 +38,8 @@ table {
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
 
 * {
   box-sizing: border-box; }
@@ -81,7 +82,7 @@ body {
     width: 100%;
     padding: 2rem;
     background-color: #6055a5;
-    color: #b9b6d3;
+    color: white;
     border-radius: 1rem;
     border: none;
     outline: none;
@@ -137,12 +138,14 @@ h6 {
 .bold-text {
   font-weight: 700; }
 
-.white-text {
-  color: white; }
-
 .primary-text {
   color: #ff7a7a; }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 780px) {
+  .container-bg {
+    height: 100%;
+    background: url(../../dist/images/bg-intro-mobile.png), #ff7a7a; }
   .col-1 {
-    width: 100%; } }
+    width: 100%; }
+  .center-text {
+    text-align: center; } }
