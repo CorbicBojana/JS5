@@ -15,6 +15,7 @@ html {
   body {
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
+    color: $white-color;
   }
 
   .container-bg {
@@ -46,6 +47,60 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 90%;
+
+    p {
+        margin-top: 3rem;
+        line-height: 1.4;
+    }
+
+    .button-secondary {
+        width: 100%;
+        padding: 2rem;
+        background-color: $blue-color;
+        color: $grayish-blue;
+        border-radius: 1rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        box-shadow: 0 1rem 1rem 0 darken($blue-color, 10);
+
+        &:hover {
+            background-color: $dark-blue;
+            box-shadow: 0 1rem 1rem 0 darken($dark-blue, 10);
+        }
+    }
+  }
+
+  .form-container {
+      margin-top: 3rem;
+      padding: 4rem;
+      background-color: $white-color;
+      border-radius: 1rem;
+
+      .button-primary {
+        width: 100%;
+        padding: 2rem;
+        background-color: $button-color;
+        border-radius: 1rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+  }
+
+  img {
+    max-width: 100%;
+  }
+  
+  h1 {
+    font-size: 4.2rem;
+    font-weight: 700;
+  }
+
+  .bold-text {
+      font-weight: 700;
+      color: $white-color;
   }
 
   @import "media";
