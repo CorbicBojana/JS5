@@ -142,4 +142,11 @@ html {
     font-weight: 600;
   }
 
+  .error {
+
+    input {
+      border-width: 0.2rem;
+    }
+  }
+
   @import "media";

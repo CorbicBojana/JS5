@@ -146,6 +146,9 @@ small {
   color: #ff7a7a;
   font-weight: 600; }
 
+.error input {
+  border-width: 0.2rem; }
+
 @media only screen and (max-width: 780px) {
   .container-bg {
     height: 100%;
