@@ -10,19 +10,23 @@ function showError(input, message) {
   formControl.classList.add("error");
   var small = formControl.querySelector("small");
   small.innerText = message;
+  email.classList.add("input-email");
+  email.placeholder = "email@example/com"
 }
 
 // Hide error message
 function showSucces(input) {
   var formControl = input.parentElement;
   formControl.classList.remove("error");
+  var small = formControl.querySelector("small");
+  small.innerText = ""
 }
 
 // Check required fields
 function checkRequired(inputArr) {
   inputArr.map(function(input) {
     if (input.value.trim() === "") {
-      showError(input,"Cannot be empty");
+      showError(input, input.name + " cannot be empty");
     } else {
       showSucces(input);
     }

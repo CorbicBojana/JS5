@@ -4,149 +4,167 @@
 @import "fonts";
 
 html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-  }
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
   
-  * {
-    box-sizing: border-box;
-  }
+* {
+  box-sizing: border-box;
+}
   
-  body {
-    font-size: 1.6rem;
-    font-family: 'Poppins', sans-serif;
-    color: $white-color;
-  }
-
-  .container-bg {
-      width: 100vw;
-      height: 100vh;
-      background: url(../../dist/images/bg-intro-desktop.png), $primary-color;
-  }
+body {
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  color: $white-color;
+}
   
-  .container {
-    max-width: 98rem;
-    margin: 0 auto;
-  }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 10%;
+  background: url(../../dist/images/bg-intro-desktop.png), $primary-color;
+}
   
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.col-1 {
+  width: 50%;
+}
+
+.button {
+  width: 100%;
+  padding: 1.8rem;
+  color: $white-color;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: $button-primary;
+  text-transform: uppercase;
+  letter-spacing: 0.11rem;
+  border-radius: 0.6rem;
+
+  &:hover {
+    background-color: lighten($button-primary, 10);
   }
-  
-  .col-1 {
-    width: 50%;
-    height: 100vh;
-    position: relative;
+}
+
+.button-secondary {
+  background-color: $button-secondary;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background-color: lighten($button-secondary, 10);
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.1);
   }
+}
 
-  .center-col {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
+.form-container {
+  margin-top: 3rem;
+  padding: 4rem;
+  background-color: $white-color;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 0px 0px rgba($black-color, 0.1);
 
-    p {
-        margin-top: 3rem;
-        line-height: 1.4;
-    }
-
-    .button-secondary {
-        width: 100%;
-        padding: 2rem;
-        background-color: $blue-color;
-        color: $white-color;
-        border-radius: 1rem;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        box-shadow: 0 1rem 1rem 0 darken($blue-color, 10);
-
-        &:hover {
-            background-color: $dark-blue;
-            box-shadow: 0 1rem 1rem 0 darken($dark-blue, 10);
-        }
-    }
-  }
-
-  .form-container {
-      margin-top: 3rem;
-      padding: 4rem;
-      background-color: $white-color;
-      border-radius: 1rem;
-      box-shadow: 0 1rem 1rem 0 darken($dark-blue, 10);
-
-      input {
-        display: block;
-        width: 100%;
-        padding: 1.6rem 2.8rem;
-        border-radius: 1rem;
-        border: 0.1rem solid $dark-blue;
-        outline: none;
-
-        &:focus {
-          border-width: 0.2rem;
-        }
-      }
-
-      .button-primary {
-        width: 100%;
-        padding: 2rem;
-        background-color: $button-color;
-        color: $white-color;
-        text-transform: uppercase;
-        font-weight: 700;
-        border-radius: 1rem;
-        border: none;
-        outline: none;
-        cursor: pointer;
-
-        &:hover {
-          background-color: darken($button-color, 10);
-        }
-      }
-  }
-
-  img {
-    max-width: 100%;
-  }
-  
-  h1 {
-    font-size: 4.2rem;
-    font-weight: 700;
-  }
-
-  h6 {
-    font-size: 1rem;
-    color: $dark-blue;
-    margin-top: 2rem;
-    text-align: center;
-  }
-
-  .bold-text {
-      font-weight: 700;
-  }
-
-  .primary-text {
-    color: $primary-color;
-  }
-
-  small {
+  .input {
     display: block;
-    margin-bottom: 2rem;
-    color: $primary-color;
-    font-weight: 600;
+    width: 100%;
+    padding: 1.6rem 2.8rem;
+    font-weight: 700;
+    border-radius: 0.6rem;
+    border: 0.1rem solid rgba($black-color, 0.2);
+    outline: none;
+
+    &:focus {
+      border-color: rgba($black-color, 0.8);
+    }
   }
+}
 
-  .error {
+img {
+  max-width: 100%;
+}
+  
+h1 {
+  font-size: 4.2rem;
+  font-weight: 700;
+}
 
-    input {
-      border-width: 0.2rem;
+h6 {
+  font-size: 1rem;
+  color: $dark-blue;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+p {
+  margin: 3rem 3rem 0 0;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.primary-text {
+  color: $primary-color;
+}
+
+.error {
+  position: relative;
+
+  .exclamation-mark {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 1.2rem;
+    right: 2.4rem;
+    background-color: $primary-color;
+    border-radius: 50%;
+
+    &::after {
+      content: "!";
+      display: block;
+      text-align: center;
+      padding: 0.5rem 0;
     }
   }
 
-  @import "media";
+  .input {
+    border: 0.2rem solid $primary-color;
+
+    &:focus {
+      border-width: 0.1rem;
+    }
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
+
+  .input-email {
+
+    &::placeholder {
+      color: $primary-color;
+    }
+  }
+}
+
+small {
+  display: block;
+  margin: 0.8rem 0 1.8rem;
+  text-align: right;
+  color: $primary-color;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+@import "media";
