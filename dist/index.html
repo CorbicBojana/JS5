@@ -9,67 +9,59 @@
   </head>
   <body>
 
-  <div class="container-bg">
+    <div class="row">
 
-    <div class="container">
+      <div class="col-1 center-text">
 
-      <div class="row">
+        <h1>Learn to code by watching others</h1>
 
-        <div class="col-1">
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable.</p>
 
-          <div class="center-col center-text">
-            
-            <h1>Learn to code by watching others</h1>
+      </div>
 
-          <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-            but understanding how developers think is invaluable.</p> 
+      <div class="col-1">
 
-          </div> 
+        <button class="button button-secondary">
+          <span class="bold-text white-text">Try it free 7 days</span> then $20/mo. thereafter
+        </button>
 
-        </div>
-
-        <div class="col-1">
-
-          <div class="center-col">
-
-            <button class="button-secondary">
-              <span class="bold-text white-text">Try it free 7 days</span> then $20/mo. thereafter
-            </button>
+        <form id="form" class="form-container">
   
-            <div class="form-container">
-  
-              <form id="form">
-  
-                <div class="form-control"><input id="firstName" name="First Name" type="text" placeholder="First Name" />
-                <small></small></div>
-  
-                <div class="form-control"><input id="lastName" name="Last Name" type="text" placeholder="Last Name" />
-                <small></small></div>
-  
-                <div class="form-control"><input id="email" name="Email" type="email" placeholder="Email Address" />
-                <small></small></div>
-  
-                <div class="form-control"><input id="password" name="Password" type="password" placeholder="Password" />
-                <small></small></div>
-  
-                <button class="button-primary">Claim your free trial</button>
-  
-                <h6>By clicking the button, you are agreeing to our <span class="bold-text primary-text">Terms and Services</span></h6>
-  
-              </form>
-  
-            </div>
-
+          <div class="form-control">
+            <div class="exclamation-mark"></div>
+            <input class="input" id="firstName" name="First Name" type="text" placeholder="First Name" />
+            <small></small>
           </div>
 
-        </div>
+          <div class="form-control">
+            <div class="exclamation-mark"></div>
+            <input class="input" id="lastName" name="Last Name" type="text" placeholder="Last Name" />
+            <small></small>
+          </div>
+        
+          <div class="form-control">
+            <div class="exclamation-mark"></div>
+            <input class="input" id="email" name="Email" type="email" placeholder="Email Address" />
+            <small></small>
+          </div>
+
+          <div class="form-control">
+            <div class="exclamation-mark"></div>
+            <input class="input" id="password" name="Password" type="password" placeholder="Password" />
+            <small></small>
+          </div>
+
+          <button class="button button-primary">Claim your free trial</button>
+
+          <h6>By clicking the button, you are agreeing to our <span class="bold-text primary-text">Terms and Services</span></h6>
+
+        </form>
 
       </div>
 
     </div>
 
-  </div>
-
-  <script src="js/main.min.js"></script>
+  <script src="../dist/js/main.min.js"></script>
   </body>
 </html>
